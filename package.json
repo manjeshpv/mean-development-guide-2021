@@ -1,15 +1,15 @@
 {
-  "name": "curriculumerp",
+  "name": "mean-development-guide-2021",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "description": "mean-development-guide-2021",
+  "main": "server/app.js",
   "scripts": {
     "start-dev": "nodemon --ignore node_modules/ -e js server/app.js",
     "test": "mocha server/conn/s3/s3.spec.js",
     "lint": "eslint --fix --ext .js --ignore-path .gitignore ./controllers",
     "validate": "npm ls"
   },
-  "author": "LEAD School",
+  "author": "Manjesh V",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
