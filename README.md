@@ -117,10 +117,10 @@
 - avoiding production data in staging to avoid hacks
 
 # UI
-Integrate your angular project with OAuth 2.0
+- Integrate your angular project with OAuth 2.0
 
 # UX
-- Metronic
+- [Metronic](https://keenthemes.com/metronic/)
 
 # Documentation
 - Asana
