@@ -1,4 +1,4 @@
-# mean-development-guide-2021
+# [MEAN Development Guide - 2021](https://manjeshpv.github.io/mean-development-guide-2021/)
 
 # Tools of Trade
 - Start with github
@@ -98,6 +98,10 @@
 - socket io config with express
 - enabling websocket support in nginx
 
+# CI/CD - Quality Checks
+- Github Actions
+- Drone CI
+
 # Pull Request Reviews
 - Write github issues link or asana task link in github commit
 - codecov for code coverage
@@ -107,14 +111,15 @@
 - nyc & istanbul for test coverage
 - precommit-hook to run basic quality checks before commit & eslint
 
-# Easy Deployement with CapRover
-- captain-definition file
-- create a app in caprover
-- adding caprover link to github webhooks for autodeploy on gith push
 
 # Staging Environment for Product and Business Teams to test
 - staging prefix for servers
 - avoiding production data in staging to avoid hacks
+
+# Easy Deployement with CapRover
+- captain-definition file
+- create a app in caprover
+- adding caprover link to github webhooks for autodeploy on gith push
 
 # UI
 - Integrate your angular project with OAuth 2.0
@@ -123,5 +128,5 @@
 - [Metronic](https://keenthemes.com/metronic/)
 
 # Documentation
-- Asana
+- Asana(Free)
 - Github Markdown/Github Pages
