@@ -1,0 +1,37 @@
+{
+  "name": "curriculumerp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start-dev": "nodemon --ignore node_modules/ -e js server/app.js",
+    "test": "mocha server/conn/s3/s3.spec.js",
+    "lint": "eslint --fix --ext .js --ignore-path .gitignore ./controllers",
+    "validate": "npm ls"
+  },
+  "author": "LEAD School",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "winston": "^2.4.0",
+    "winston-daily-rotate-file": "^1.7.2",
+    "winston-raven-sentry": "^1.0.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^4.11.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.13.0",
+    "express-route-validator": "^0.2.5",
+    "mocha": "^8.1.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.4",
+    "precommit-hook": "^3.0.0",
+    "supertest": "^4.0.2"
+  },
+  "pre-commit": [
+    "lint"
+  ]
+}
