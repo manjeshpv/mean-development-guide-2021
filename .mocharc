@@ -1,1 +1,5 @@
---timeout 2000
+--colors
+--ui bdd
+--timeout 100000
+--reporter spec
+--require mocha.global.js

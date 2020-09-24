@@ -1,7 +1,6 @@
 
 const unit = require('./school.unit');
 
-exports.index = () => {
-    // - business logic
-    return unit.generateRandomSchools();
-}
+exports.index = () =>
+// - business logic
+  unit.generateRandomSchools();

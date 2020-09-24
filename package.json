@@ -5,8 +5,8 @@
   "main": "server/app.js",
   "scripts": {
     "start-dev": "nodemon --ignore node_modules/ -e js server/app.js",
-    "test": "mocha server/conn/s3/s3.spec.js",
-    "lint": "eslint --fix --ext .js --ignore-path .gitignore ./controllers",
+    "test": "mocha  server/api/school/*.spec.js",
+    "lint": "eslint --fix --ext .js --ignore-path .gitignore server/**/*.js",
     "validate": "npm ls"
   },
   "author": "Manjesh V",

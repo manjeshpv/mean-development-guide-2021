@@ -1,0 +1,19 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 8
+  },
+  "extends": [
+    "airbnb/base"
+  ],
+  "env": {
+    "mocha": true
+  },
+  "globals": {
+    "expect": true,
+    "Promise": true
+  },
+  "rules": {
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
+    "max-len": ["error", 140]
+  }
+}

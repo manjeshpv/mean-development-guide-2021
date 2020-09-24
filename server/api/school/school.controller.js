@@ -8,22 +8,27 @@
 const service = require('./school.service');
 
 exports.index = function (req, res) {
-    try {
-        const schools = service.index(req.user, req.query);
-console.log('request received')
-        res.send(schools);
-    } catch(err) {
-        next(err);
-    }
-}
+  try {
+    const schools = service.index(req.user, req.query);
+    console.log('request received');
+    res.send(schools);
+  } catch (err) {
+    next(err);
+  }
+};
 
 exports.create = (req, res, next) => {
-    try {
-        const school = service.create(req.body) //- save in db;
-        webhook.trigger('school:create', school);
+  try {
+    const school = service.create(req.body); // - save in db;
+    otp.send('high-priority', {});
 
-        res.send(schools);
-    } catch(err) {
-        next(err);
-    }
-}
+    webhook.trigger('school:create', school);
+
+    // generic event
+    // integration event - email:send,
+
+    res.send(schools);
+  } catch (err) {
+    next(err);
+  }
+};
