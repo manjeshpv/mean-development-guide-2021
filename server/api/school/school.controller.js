@@ -5,12 +5,17 @@
 // show
 // update
 // destroy
+process.env.DEBUB = '*';
+const debug = require('debug');
 const service = require('./school.service');
 
-exports.index = function (req, res) {
+const log = debug(__filename);
+log('wow got debug log');
+
+exports.index = (req, res, next) => {
   try {
     const schools = service.index(req.user, req.query);
-    console.log('request received');
+    log('request received');
     res.send(schools);
   } catch (err) {
     next(err);
@@ -20,14 +25,9 @@ exports.index = function (req, res) {
 exports.create = (req, res, next) => {
   try {
     const school = service.create(req.body); // - save in db;
-    otp.send('high-priority', {});
 
-    webhook.trigger('school:create', school);
 
-    // generic event
-    // integration event - email:send,
-
-    res.send(schools);
+    res.send(school);
   } catch (err) {
     next(err);
   }

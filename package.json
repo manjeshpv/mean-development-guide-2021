@@ -12,6 +12,7 @@
   "author": "Manjesh V",
   "license": "ISC",
   "dependencies": {
+    "debug": "^4.2.0",
     "express": "^4.17.1",
     "winston": "^2.4.0",
     "winston-daily-rotate-file": "^1.7.2",
