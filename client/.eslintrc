@@ -1,0 +1,23 @@
+{
+  "extends": [
+    "airbnb/base"
+  ],
+  "rules": {
+    "new-cap": [2, {"capIsNewExceptions": [
+      "angular"
+    ]}]
+  },
+  "globals": {
+    "angular": true,
+    "$": true,
+    "moment": true,
+    "io": true,
+    "_": true,
+    "String": true,
+    "confirm": true,
+    "playerId": true,
+    "importScripts": true,
+    "Raven": true
+  }
+
+}
