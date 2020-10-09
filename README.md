@@ -112,7 +112,6 @@
 - nyc & istanbul for test coverage
 - precommit-hook to run basic quality checks before commit & eslint
 
-
 # Staging Environment for Product and Business Teams to test
 - staging prefix for servers
 - avoiding production data in staging to avoid hacks
@@ -131,3 +130,9 @@
 # Documentation
 - Asana(Free)
 - Github Markdown/Github Pages
+
+
+
+References:
+- https://blog.logrocket.com/the-perfect-architecture-flow-for-your-next-node-js-project/
+- https://docs.microsoft.com/en-us/azure/architecture/guide/architecture-styles/n-tier
